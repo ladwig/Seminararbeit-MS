@@ -1,0 +1,83 @@
+% Dokumentenklasse und Seitenränder
+\documentclass[10pt]{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+% Font-Einstellungen: Arial
+\usepackage{fontspec}
+\setmainfont[
+BoldFont=arialbd.ttf,
+ItalicFont=ariali.ttf,
+BoldItalicFont=arialbi.ttf
+]{arial.ttf}
+
+% First Indent und CSQuotes
+\usepackage{indentfirst}
+\usepackage{csquotes}
+
+% \maketitle überschreiben für linksbündigen Text
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
+\begin{flushleft}
+  \Large{\textbf{\@title}}
+\end{flushleft}\egroup
+}
+\makeatother
+
+% \section überschreiben für kleinere Schriftgröße
+\usepackage{titlesec}
+\titleformat*{\section}{\normalsize\bfseries}
+
+% Packages für Referenzen...
+\usepackage[backend=biber,style=authoryear,citestyle=authoryear]{biblatex}
+\setlength\bibitemsep{1.0\itemsep}
+\addbibresource{references.bib}
+
+% Deutsche Referenzen
+\usepackage[ngerman]{babel}
+
+% Zeilenabstand
+\usepackage{setspace}
+\onehalfspacing
+
+% Globale Einrückungen je Absatz unterbinden
+\setlength{\parindent}{0pt}
+
+% Makro von StackExchange für sekundäre Quellen
+\DeclareCiteCommand{\secondaryciteauthor}{}{\printtext[bibhyperref]{\printnames{labelname}}}{}{}
+\DeclareCiteCommand{\secondaryciteyear}{}{\bibhyperref{\printdate}}{\multicitedelim}{}
+\newcommand{\szit}[2]{(\secondaryciteauthor{#1} \secondaryciteyear{#1}, zitiert nach \secondaryciteauthor{#2} \secondaryciteyear{#2})}
+
+% Makro für Klammern um Zitierung
+\newcommand{\zit}[1]{(\cite{#1})}
+
+% ======================
+% ANFANG DOKUMENT
+% ======================
+
+\title{Stressreduzierende Wirkung von Mindfulness Smartphone-Apps bei regelmäßiger Nutzung}
+
+\begin{document}
+
+\maketitle
+
+\begin{flushleft}
+Daniel Ladwig \\* 
+Hochschule für angewandte Wissenschaften Würzburg-Schweinfurt
+\end{flushleft}
+
+
+
+\section{EINLEITUNG}
+
+Rund jeder vierte Studierende fühlt sich im Studienalltag ziemlich bis häufig gestresst \zit{gesundheitStudis2017}. Auch gesamtbevölkerisch ist erkennbar, dass sich vor allem junge Menschen immer gestresster fühlen. Als Auslöser werden hauptsächlich Beruf, Ausbildung bzw. Studium, aber auch soziale Verpflichtungen wie Termine und Freizeitaktivitäten genannt\zit{tkEntspannDich2016}.
+\bigbreak
+
+
+\section{Haupteil}
+In den Vereinigten Staaten, im Zeitraum von 2012 bis 2018, hat sich der Anteil der Studenten, die an einem Fernunterricht teilnehmen, von 25,9 \% auf 35,3 \% (+9,4 \%) erhöht. Von diesen 35,3 \% nahmen 16,6 \% der Studenten ausschließlich online teil \zit{distanceLearningUSies}{distanceLearningUSstatista}. \bigbreak
+
+
+\nocite{*}
+\printbibliography
+
+\end{document}
