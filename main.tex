@@ -14,6 +14,17 @@ BoldItalicFont=arialbi.ttf
 \usepackage{indentfirst}
 \usepackage{csquotes}
 
+% Für Grafiken
+\usepackage{graphicx}
+
+% Für Tabellen
+
+\usepackage{colortbl}
+\usepackage{hhline}
+\usepackage{array}
+\usepackage[longtable]{multirow}
+ \usepackage{longtable}
+ 
 % \maketitle überschreiben für linksbündigen Text
 \makeatletter
 \renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
@@ -110,6 +121,21 @@ Mindfulness, zu Deutsch Achtsamkeit, beschreibt eine gewisse Haltung bzw. bestim
 \subsection{Mindfulness Apps}
 Für diese Arbeit definiert die Begrifflichkeit  \grqq Mindfulness Apps\grqq\ bestimmte Applikationen für mobile Endgeräte bzw. Smartphones. Die Anwendungen vermitteln dem Benutzer verschiedene Meditationspraktiken (z.B. durch geführte Meditation) und weitere Übungen und Funktionen (z.B. Aufmerksamkeits-Übungen) um kognitive Fähigkeiten trainieren zu können. 2018 war die App \textit{Headspace} in den Ländern Kanada, England und Holland jeweils unter den Anwendungen vertreten, für die die Nutzer bereit waren am meisten Geld auszugeben \zit{SteigendeNutzung}. Deshalb wurde diese Anwendung im Rahmen dieser Arbeit analysiert und dient teilweise als Grundlage für weitere Nachforschungen und Teile der späteren Interviewfragen. 
 Weitere Applikationen die in das Raster der Mindfulness Apps fallen sind beispielsweise \textit{Calm}, \textit{Relax} \textit{Meditation}, \textit{10\% Happier} und\textit{ The Mindfulness App }\zit{VergleichApps}. Die Wirksamkeit bzw. der Nutzen solcher Anwendungen wurde bereits in verschiedenen Studien überprüft (siehe Abschnitt Related Works).
+\begin{figure}[h]
+ \centering
+ \begin{minipage}[t]{0.45\linewidth} 
+  \centering 
+ \includegraphics[width=5cm,keepaspectratio]{headspace1}
+  \end{minipage}
+  \begin{minipage}[t]{0.45\linewidth} 
+  \centering 
+   \includegraphics[width=5cm,keepaspectratio]{headspace2}
+  \end{minipage}
+    \caption{Kurs Stress loslassen \& Nutzerprofil}  der App \textit{Headspace} 
+   \label{fig:headspace}
+\end{figure}
+
+
 \subsection{Related Works}
 
 
@@ -117,20 +143,87 @@ Weitere Applikationen die in das Raster der Mindfulness Apps fallen sind beispie
 Um die Forschungsfrage beantworten zu können wird die Arbeit in zwei Aufgabenbereiche gegliedert, einer Metaanalyse bereits vorhandener Literatur und die Durchführung mehrerer Leitfadeninterviews. 
 Eine Metaanalyse im herkömmlichen Sinn, also eine quantitative Kodierung und Auswertung vorhandener Forschung, ist aufgrund des geringen (zeitlichen) Umfangs dieser Arbeit nicht möglich. Vielmehr erfolgt dieser Arbeitsschritt in Annäherung an eine systematische Überssichtsarbeit, um relevante Forschungsarbeiten zusammenfassen und letztendlich die gegebene Fragestellung besser beantworten zu können \zit{Metaanalyse}.
 
-Die Schlussfolgerungen, die die Auswertungen der bereits bestehenden Quellen und Related Works (siehe Abschnitt 2) zulassen, dienen als Grundlage für die Erstellung bzw. Entwicklung eines Fragebogens für Leitfadeninterviews. Leitfadeninterviews bezeichnen eine qualitative Erhebungs- bzw. Forschungsmethode bei der mehrere Interviews mithilfe eines vorher definierten, mehr oder weniger strukturierten, Fragebogens geführt werden. Für diese Arbeit wurde ein Fragenkatalog erstellt, der je nach Gesprächsverlauf flexibel abgearbeitet werden kann. Kommen während des Interviews weitere, neue Fragen / Antworten auf, sind auch diese zulässig. 
+Die Schlussfolgerungen, die die Auswertungen der bereits bestehenden Quellen und Related Works (siehe Abschnitt 2) zulassen, dienen als Grundlage für die Erstellung bzw. Entwicklung eines Fragebogens für Leitfadeninterviews. Leitfadeninterviews bezeichnen eine qualitative Erhebungs- bzw. Forschungsmethode bei der mehrere Interviews mithilfe eines vorher definierten, mehr oder weniger strukturierten, Fragebogens geführt werden. Für diese Arbeit wurde ein Fragenkatalog erstellt, der je nach Gesprächsverlauf flexibel abgearbeitet werden kann. Kommen während des Interviews weitere, neue Fragen / Antworten auf, sind auch diese zulässig. Bei den Fragen soll es sich hauptsächlich um offene Fragestellungen handeln, um bestmöglich an neue Informationen / Aussagen zu gelangen.
 Die Auswahl der Gesprächspartner erfolgt hauptsächlich nach dem Kriterium, dass diese in der Zielgruppe, also aktuell Studierende, sein müssen.  WARUM INTERVIEW
 
 Die eigentlichen Interviews werden als Einzelgespräche über einen Audio- bzw. Videoanruf auf den Plattformen \textit{Zoom} bzw. \textit{Discord} geführt und mit Einverständnis des jeweiligen Gegenübers aufgezeichnet. 
 Im Nachgang erfolgt das Transkribieren der Gespräche in zwei Schritten. Erst wird die jeweilige Audioaufzeichnung mithilfe der computergestützten Spracheingabe auf der Plattform \textit{Google Docs} zu Text umgewandelt. Im Nachgang erfolgt ein manuelles \grqq Sichten\grqq\ der Aufnahme und gegebenenfalls das Ausbessern von fehlerhaften oder nicht transkribierten Aussagen. 
-Sind alle Interviews transkribiert, erfolgt eine qualitative Inhaltsanalyse nach Kuckartz in mehreren Schritten. Zu Beginn werden die vorhandenen Transkripte ausgewertet und erste thematische Hauptgruppen generiert. Auf Grundlage dieser Gruppen werden alle vorliegenden Interviews codiert und die jeweilig gleich codierten Stellen zusammengestellt um daraus induktiv sog. Subkategorien bestimmen zu können. Sind alle Inhalte entsprechend codiert bzw. kategorisiert, kann mit der eigentlichen Auswertung begonnen werden. Hier wird versucht neue Zusammenhänge zwischen verschiedenen Kategorien und bereits bestehendem Wissen zu erkennen, um im Nachgang die Ergebnispräsentation vorbereiten zu können \zit{Inhaltsanalyse}.
+Sind alle Interviews transkribiert, erfolgt eine qualitative Inhaltsanalyse nach Kuckartz in mehreren Schritten. Zu Beginn werden die vorhandenen Transkripte ausgewertet und erste thematische Hauptgruppen generiert. Auf Grundlage dieser Gruppen werden alle vorliegenden Interviews codiert und die jeweilig gleich codierten Stellen zusammengestellt um daraus induktiv sog. Subkategorien bestimmen zu können. Sind alle Inhalte entsprechend codiert bzw. kategorisiert, kann mit der eigentlichen Auswertung begonnen werden. Hier wird versucht neue Zusammenhänge zwischen verschiedenen Kategorien und bereits bestehendem Wissen zu erkennen, als auch verschiedene Aussagen zusammenzusammen bzw. zu generalisieren. Im Nachgang erfolgt dann die Ergebnispräsentation \zit{Inhaltsanalyse}. Aufgrund des begrenzten Umfangs und des zeitlichen Rahmens wird auf eine Reliabilitätsprüfung dieser Arbeit verzichtet.
 
-\subsubsection{Durchführung}
-Für die Durchführung der Interviews wurde mit jedem Befragten ein individueller Termin vereinbart, zu dem sich dann auf der vorher bestimmten Plattform getroffen wurde. Nach einer kurzen Begrüßung wurde der Befragte kurz darüber informiert, dass es sich bei dem Interview grob um das Thema "Stress" handle. Weiterhin, dass das Gespräch aufgezeichnet und später transkribiert wird, um es für die Arbeit auswerten zu können. Bevor die eigentlichen Fragen gestellt wurden, wurde das Gegenüber darüber aufgeklärt, dass die Befragung anonym verarbeitet wird, Fragen ehrlich und ausführlich beantwortet werden sollen und bei Fragen die nicht beantwortet werden möchten dies kommuniziert und keine Falschaussage getroffen werden soll. Im Anschluss an das Interview wurde sich bei der befragten Person für die aufgebrachte Zeit bedankt und gegebenenfalls weitere Informationen über die Arbeit bzw. das Ziel der Arbeit gegeben.
+\subsubsection{Interview Durchführung}
+Für die Durchführung der Interviews wurde mit jedem Befragten ein individueller Termin vereinbart, zu dem sich dann auf der vorher bestimmten Online-Plattform getroffen wurde. Nach einer Begrüßung wurde der Befragte kurz darüber informiert, dass es sich bei dem Interview grob um das Thema  \grqq Stress\grqq\ handle. Weiterhin, dass das Gespräch aufgezeichnet und später transkribiert wird, um es für die Arbeit auswerten zu können. Bevor die eigentlichen Fragen gestellt wurden, wurde das Gegenüber darüber aufgeklärt, dass die Befragung anonym verarbeitet wird, Fragen ehrlich und ausführlich beantwortet werden sollen und bei Fragen die nicht beantwortet werden möchten dies kommuniziert und keine Falschaussage getroffen werden soll. Im Anschluss an das Interview wurde sich bei der befragten Person für die aufgebrachte Zeit bedankt und gegebenenfalls weitere Informationen über die Arbeit bzw. das Ziel der Arbeit gegeben.
 Insgesamt wurden 6 Interviews durchgeführt, wovon alle Gesprächspartner (drei weibliche, drei männliche Personen) aktuell eingeschriebene Studenten an einer bayrischen Hochschule oder Universität sind. 
 
 \subsubsection{Fragenkatalog}
+Der Fragenkatalog für die Leitfadeninterviews kann in verschiedene Kategorien untergliedert werden, die sich vorab durch Analyse bestehender Quellen (siehe Abschnitt 2) ergaben. Diese teilen sich auf in: 
+\begin{itemize}[itemsep=0.5mm, parsep=0pt]
+\item  Allgemeine Informationen \textit{A}
+\item  Stress \& Stressempfinden \textit{B}
+\item  Stressbewältigung \& Stressvorbeugung \textit{C}
+\item  Smartphone-Nutzung \textit{D}
+\item  Achtsamkeit \& Meditation \textit{E}
+\item  Fragen, falls schon eine Mindfulness-App genutzt wird \textit{F}
+\end{itemize}
+
+Insgesamt enthält der Katalog rund 40 Fragen, davon sind ca. vier bis fünf Fragen als geschlossene Fragen anzusehen (z.B. \textit{Wie ist dein Geschlecht?}). Je nach Interviewverlauf können neue, sich aus dem Gespräch ergebene, Fragen zusätzlich gestellt werden oder eine Frage aus dem Katalog weggelassen werden, wenn eine vorherige Antwort diese ausschließt bzw. irrelevant macht.
+
+
+
+\begin{longtable}{|>{\hspace{0pt}}p{0.273\linewidth}|>{\hspace{0pt}}p{0.668\linewidth}|} 
+\hline
+Kategorie & Fragestellung \\* 
+\hline
+\multirow{2}{0.273\linewidth}{\hspace{0pt}\textit{A}} & {\cellcolor[rgb]{0.949,0.949,0.949}}\textit{A1}~Wie alt bist du? \\* 
+\cline{2-2}
+ & \textit{A2}~Erzähle mir doch etwas zu deinem Studium \\* 
+\hline
+\multirow{4}{0.273\linewidth}{\hspace{0pt}\textit{B}} & {\cellcolor[rgb]{0.949,0.949,0.949}}\textit{B1}~In welchen Lebensbereichen empfindest du Stress? \\* 
+\cline{2-2}
+ & \textit{B2}~Wie würdest du die Arbeits-/Zeitbelastung durch dein Studium einschätzen? \\* 
+\hhline{|~-|}
+ & {\cellcolor[rgb]{0.949,0.949,0.949}}\textit{B3}~Was ist Stress für dich? / Was verstehst du unter Stress? \\* 
+\cline{2-2}
+ & \textit{B4}~Woran machst du fest, dass du gestresst bist? \\* 
+\hline
+\multirow{5}{0.273\linewidth}{\hspace{0pt}\textit{C}} & {\cellcolor[rgb]{0.949,0.949,0.949}}\textit{C1}~Wie gehst du damit um, wenn du mehrere Aufgaben (z.B. für Uni oder Arbeit) gleichzeitig zu erledigen/abzugeben hast? \\* 
+\cline{2-2}
+ & \textit{C2}~Was sind deiner Meinung nach Dinge, die man vorbeugend tun kann, um Stress zu vermeiden? \\* 
+\hhline{|~-|}
+ & {\cellcolor[rgb]{0.949,0.949,0.949}}\textit{C3}~Kennst du längere Stressphasen, wenn ja welche? \\* 
+\cline{2-2}
+ & \textit{C4~}Wie gehst du mit einer längeren Stressphase (z.B. Klausurenphase) um, hast du bestimmte Strategien die dir dabei helfen? \\* 
+\hhline{|~-|}
+ & {\cellcolor[rgb]{0.949,0.949,0.949}}\textit{C5}~Wie sieht Entspannung / Entspannungsphasen für dich konkret aus? \\* 
+\hline
+\multirow{3}{0.273\linewidth}{\hspace{0pt}\textit{D}} & \textit{D1}~Nutzt du Gesundheits-/Healthapps (z.B. Trainingsapps, Tracker)? \\* 
+\hhline{|~-|}
+ & {\cellcolor[rgb]{0.949,0.949,0.949}}\textit{D2}~Welche nennenswelchen Features haben diese Apps? \\* 
+\cline{2-2}
+ & \textit{D3}~Denkst du eine App könnte dir beim Entspannen helfen? Welche Features müsste diese haben? \\* 
+\hline
+\multirow{4}{0.273\linewidth}{\hspace{0pt}\textit{E}} & {\cellcolor[rgb]{0.949,0.949,0.949}}\textit{E1}~Hast du dich schon mal Entspannungsübungen (z.B. Atemübungen, Meditation) ausprobiert? \\* 
+\cline{2-2}
+ & \textit{E2}~Was denkst du, denkt die Gesellschaft über Dinge wie Achtsamkeits- oder Meditationsübungen? \\* 
+\hhline{|~-|}
+ & {\cellcolor[rgb]{0.949,0.949,0.949}}\textit{E3}~Was denkst du persönlich darüber? \\* 
+\cline{2-2}
+ & \textit{E4}~Was müsste dir eine App bieten, dass du sie regelmäßig für diesen Zweck nutzt? \\* 
+\hline
+\multirow{3}{0.273\linewidth}{\hspace{0pt}\textit{F}} & {\cellcolor[rgb]{0.949,0.949,0.949}}F1 Was versprichst du dir von dieser App? \\* 
+\cline{2-2}
+ & \textit{F2}~Wieso nutzt du genau diese App? \\* 
+\hhline{|~-|}
+ & {\cellcolor[rgb]{0.949,0.949,0.949}}\textit{F3}~Wie bist du zu der App gekommen? \\
+\hline
+\caption{Auszug aus dem Fragenkatalog}
+\label{table:fragen}
+\end{longtable}
+
+Die Fragen der Kategorie \textit{A} sollen grundlegende Informationen klären und in das Gespräch einführen. Folgend soll in der zweiten Kategorie (\textit{B}) herausgefunden werden, ob überhaupt und wie der Befragte, im Kontext des Studiums, Stress empfindet. Die Fragen des Abschnittes \textit{C} dienen der Feststellung von bereits vorhandenen Stress-Bewältigungsstrategien und der Hinführung zum Thema Entspannung. Mit den \textit{D} Fragen soll kurz leicht Abstand vom eigentlichen Thema genommen werden. Die Antworten sollen des weiteren erste Aufschlüsse darüber geben, wie der Befragte eine solche  \grqq Mindfulness App\grqq\ annehmen würde. Die Kategorie \textit{E} befasst sich hauptsächlich mit Akzeptanz und Interesse des Gegenübers hinsichtlich Entspannungs- und Meditationsübungen. Nutzt der Gesprächspartner bereits eine \grqq Mindfulness App\grqq\ , so sollen die Fragen \textit{F} klären weshalb und wie die App jeweilige verwendet wird.
 
 \section{AUSWERTUNG}
+Die Leitfadeninterviews, die mit den Studierenden geführt wurden, zeigten, dass \grqq Mindfulness Apps\grqq\ durchaus sehr gut zur Entspannung und Stressminderung beitragen können. Die Befragten, die bereits Erfahrungen mit derartigen Anwendungen gesammelt haben (über die Hälfte aller Befragten), sagten unter anderem aus, dass durch die Nutzung in akuten Stresssituationen schneller wieder entspannen und klare Gedanken fassen konnten.
+
 \section{FAZIT}
 
 \nocite{*}
